@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "Sillón Mestre",
+        "price": 15,
+        "date": "25/10/2022",
+        "category": "PRODUNO",
+        "description": "Fabricado con materiales nobles y de alta resistencia, permite un uso intensivo diario sin problemas."
+    },
+    {
+        "id": 2,
+        "name": "Mesa Eames",
+        "price": 20,
+        "date": "15/10/2022",
+        "category": "PRODUNO",
+        "description": "Mesa estilo nórdico que ofrece una combinación en tapa blanca laqueada mate y patas en tonos claros, para generar una visual única."
+    },
+    {
+        "id": 3,
+        "name": "Sillon Lux",
+        "price": 25,
+        "date": "20/04/2022",
+        "category": "PRODUNO",
+        "description": "Sillón estilo nórdico clarito. Incluye su completo Kit de armado, con todos los componentes necesarios para su fácil ensamblaje."
+    },
+    {
+        "id": 4,
+        "name": "Sillon Kepler",
+        "price": 20,
+        "date": "01/10/2022",
+        "category": "PRODDOS",
+        "description": "Versión desarmada y lista para que puedas ensamblarla en tu hogar. Incluye su completo Kit de armado, con todos los componentes necesarios para su fácil ensamblaje."
+    },
+    {
+        "id": 5,
+        "name": "Sillon Mosaic",
+        "price": 30,
+        "date": "15/09/2022",
+        "category": "PRODDOS",
+        "description": "Sillón estilo nórdico. Incluye su completo Kit de armado, con todos los componentes necesarios para su fácil ensamblaje."
+    },
+    {
+        "id": 6,
+        "name": "Cama 2 plazas",
+        "price": 10,
+        "date": "10/05/2022",
+        "category": "PRODDOS",
+        "description": "Cama de dos plazas estilo nórdico. Incluye su completo Kit de armado, con todos los componentes necesarios para su fácil ensamblaje."
+    }
+]
