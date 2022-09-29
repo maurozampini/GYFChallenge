@@ -21,11 +21,13 @@ Este proyecto fue creado con react.js + .Net C# + MongoDB.
 2- Ubicarse en la carpeta Project1 y crear el archivo ".env". El mismo debe contener:
 
 `USER=GYFChallenge`
+
 `PASSWORD=GYFChallenge`
 
 3- Ubicarse en la carpeta ClientApp y crear el archivo ".env.development". El mismo debe contener:
 
 `REACT_APP_API_URL=http://localhost:5000`
+
 `PORT=3000`
 
 4- Compilar solución
