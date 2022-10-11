@@ -1,3 +1,4 @@
+using GYFChallenge.Repositories;
 using Project1;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -25,6 +26,8 @@ builder.Services.AddCors(opciones =>
 var root = Directory.GetCurrentDirectory();
 var dotenv = Path.Combine(root, ".env");
 DotEnv.Load(dotenv);
+
+builder.Services.AddTransient<IProductCollection, ProductCollection>();
 
 var app = builder.Build();
 

@@ -8,18 +8,23 @@ namespace GYFChallenge.Controllers
     [ApiController]
     public class ProductController : Controller
     {
-        private IProductCollection db = new ProductCollection();
+        private readonly IProductCollection _productCollection;
+
+        public ProductController(IProductCollection productCollection)
+        {
+            _productCollection = productCollection;
+        }
 
         [HttpGet]
         public async Task<IActionResult> GetAllProducts()
         {
-            return Ok(await db.GetAllProducts());
+            return Ok(await _productCollection.GetAllProducts());
         }
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetProductsDetails(string id)
         {
-            return Ok(await db.GetProductById(id));
+            return Ok(await _productCollection.GetProductById(id));
         }
 
         [HttpPost]
@@ -36,7 +41,7 @@ namespace GYFChallenge.Controllers
                 return BadRequest(ModelState);
             }
 
-            await db.InsertProduct(product);
+            await _productCollection.InsertProduct(product);
             return Created("Created", true);
         }
 
@@ -51,14 +56,14 @@ namespace GYFChallenge.Controllers
 
             //product.Id = new MongoDB.Bson.ObjectId(id);
             product.id = id;
-            await db.UpdateProduct(product);
+            await _productCollection.UpdateProduct(product);
             return Created("Created", true);
         }
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteProduct(string id)
         {
-            await db.DeleteProduct(id);
+            await _productCollection.DeleteProduct(id);
             return NoContent();
         }
     }
